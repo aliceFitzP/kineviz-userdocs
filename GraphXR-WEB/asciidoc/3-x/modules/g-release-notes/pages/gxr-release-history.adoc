@@ -3,10 +3,29 @@
 [cols="1,1,10"]
 |===
 |*Tag* |*Date* |*Release Highlights*
+|xref:./gxr-3-5-0-release-notes.adoc[3.5.0] |10/29/2025 
+a|* *Usability*
+* Right-click Layout menu grouped for better visibility.
+* *Expand* displays a spinner showing ongoing query progress. 
+* Light mode Map controls are more visible.
+* Property-based color scales now include a *RdYlGn* (red-yellow-green) option.
+
+* *Performance* 
+** Kuzu schema handling is improved to prevent duplicate properties.
+** Query Bar clears previous query results when switching databases.
+** Full-text search detects a Neo4j schema and its relationships with more accuracy and responsiveness.
+
+* *Configuration* 
+** Google Cloud Integration
+*** Helm and Kubernetes enhancements improve Helm deployment for EU environments and provide added support for single-project, single-user Neo4j configurations.
+
+* *GraphXR API* 
+** gxr.colorNodesByProperty() for improved control of coloring nodes.
+
 |xref:./gxr-3-4-0-release-notes.adoc[3.4.0] |10/21/2025 
 a|* *Usability*
 ** Refined UI design for the left navigation menu, toolbar icons, and legend list.
-** Enhanced search behavior
+** Enhanced search behavior.
 ** Numerous UI improvements in layout, dialog size and styling, and consistent behavior of tooltips, modal dialogs, and scrolling.  
 
 * *Performance*

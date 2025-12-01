@@ -1,18 +1,17 @@
 #! /bin/zsh
 
-KINEVIZ_UI_BASE=$HOME/github/kineviz-docs/GraphXR-WEB
+KINEVIZ_UI_BASE=$HOME/github/Kineviz/kineviz-docs-ui
 KINEVIZ_UI_BUILD=$KINEVIZ_UI_BASE/build
 cd $KINEVIZ_UI_BASE
 
 # See https://docs.antora.org/antora/latest/install-and-run-quickstart/ for details of the build process
-cd ~/bitbucket/kineviz-2024/antora-ui-graphxr
 pwd
 
 echo ##############
 git --version
-# nvm alias default 16
-# nvm install 16
-# nvm use 16
+# nvm alias default 24
+# nvm install 24
+# nvm use 24
 # nvm --version
 # node --version
 # npm --version

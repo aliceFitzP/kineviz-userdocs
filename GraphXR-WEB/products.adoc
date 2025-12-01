@@ -1,0 +1,41 @@
+= GraphXR Configurations and Features 
+
+[cols="3,3"]
+|===
+| *GraphXR Explorer* 
+for *_GCP SpannerGraph & BigQueryGraph_*
+| xref:attachment$quick-start-card.pdf[*Quick Start Card*] • xref:attachment$quick-start-guide.pdf[*Quick Start Guide*]
+
+
+| *GraphXR Enterprise*
+
+a| *_GCP SpannerGraph & BigQueryGraph_*
+
+xref:attachment$quick-start-card.pdf[*Quick Start Card*] • xref:attachment$quick-start-guide.pdf[*Quick Start Guide*]
+
+* _Supported DBs: Spanner Graph, BigQuery Graph_
+* _Save and Share Unlimited Views_ 
+* _50000 Nodes 50000 Edges_
+* _Default UI limited (configurable)_
+* _1 User, 1 Project_
+
+a|* _Supported DBs: See current_
+* _Unlimited Nodes and Edges_
+* _Save and Share Unlimited Views_
+* _Save and Export Project data_
+* _Multiple Projects_
+* _Role-based user admin_
+* _Extensions: Graph Composer, Grove Notebook and Sandboxes_ 
+  
+a| *_Lite_*
+
+* _Supported DBs: Neo4j, Memgraph, Puppygraph_
+* _Single Watermarked View_ 
+* _1000 Nodes 1000 Edges_
+* _Default UI limited (configurable)_
+* _No Export_
+* _1 User, 1 Project_
+
+|
+|===
+  

@@ -1,6 +1,6 @@
 name: user-guides
 title: Home
-version: 3.0.0
+version: v3.x
 nav:
 - modules/ROOT/nav.adoc
 - modules/g-user/nav.adoc

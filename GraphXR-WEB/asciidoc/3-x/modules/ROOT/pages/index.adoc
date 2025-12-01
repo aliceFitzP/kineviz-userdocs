@@ -1,8 +1,18 @@
 = Getting Started
 
-https://www.kineviz.com/graphxr[GraphXR] makes it easy to build compelling 3D graph visualizations that focus on complex connections in information. In GraphXR you can find answers and communicate results quickly, and also expand upon or re-focus an exploration.  
+https://www.kineviz.com/graphxr[GraphXR] makes it easy to explore graph data visually, and in the process build compelling 2D or 3D graph visualizations of complex connections in information.
+ 
+Available features depend on your subscription:
 
-== Basic Workflow
+* GraphXR *_Enterprise_*. Full-featured visualization and graph data modeling, including multiple Projects, multi-user and multi-database support.  
+
+* GraphXR *_Explorer_*. One Project only. Visualization for SpannerGraph and  BigQueryGraph databases, limited to 50,000 nodes and 50,000 edges.
+
+** xref:attachment$quick-start-card.pdf[*Explorer Quick Start Card*] • xref:attachment$quick-start-guide.pdf[*Explorer Quick Start Guide*]
+
+* GraphXR *_Lite_*. One Project only. Watermarked visualization for Neo4j, Memgraph, or Puppygraph databases, limited to 1000 nodes and 1000 edges. 
+
+== Basic GraphXR Workflow
 
 A basic GraphXR workflow for investigation and analysis is outlined below, with links to the details that will help you dive right in.   
 
@@ -22,8 +32,7 @@ _Database query or drag and drop_
 | xref:g-user:graph-analytics.adoc[6. *Discover Connected Paths*]
 
 | xref:g-user:layouts/working-with-layouts.adoc[7. *Choose Layouts*] and xref:g-user:geospatial-maps.adoc[*Geospatial Maps*]
-| xref:g-user:data-sharing/data-share-views.adoc[8. *Share*], xref:g-user:data-save-views/data-save-intro.adoc[*Save*] and xref:g-user:data-export/data-export-intro.adoc[*Export*] your data views.  
-
+| xref:g-user:data-sharing/data-share-views.adoc[8. *Share*], xref:g-user:data-save-views/data-save-intro.adoc[*Save*] and xref:g-user:data-export/data-export-intro.adoc[*Export*] _your data views_.  
 |===
 
 == Learning Resources
