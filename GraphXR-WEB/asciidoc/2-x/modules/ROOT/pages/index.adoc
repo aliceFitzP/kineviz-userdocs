@@ -1,7 +1,7 @@
 = Getting Started
 
 https://www.kineviz.com/graphxr[GraphXR] makes it easy to explore graph data visually, and in the process build compelling 2D or 3D graph visualizations of complex connections in information.
-
+ 
 == Basic GraphXR Workflow
 
 A basic GraphXR workflow for investigation and analysis is outlined below, with links to the details that will help you dive right in.   
