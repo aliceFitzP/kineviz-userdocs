@@ -10,7 +10,7 @@ Available features depend on your subscription:
 
 ** xref:attachment$quick-start-card.pdf[*Explorer Quick Start Card*] • xref:attachment$quick-start-guide.pdf[*Explorer Quick Start Guide*]
 
-* GraphXR *_Lite_*. One Project only. Watermarked visualization for Neo4j, Memgraph, or Puppygraph databases, limited to 1000 nodes and 1000 edges. 
+* GraphXR *_Trial_*. One Project only. Watermarked visualization for Neo4j, Memgraph, or Puppygraph databases, limited to 1000 nodes and 1000 edges. 
 
 == Basic GraphXR Workflow
 
