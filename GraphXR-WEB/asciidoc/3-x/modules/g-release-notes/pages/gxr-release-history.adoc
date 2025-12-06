@@ -201,9 +201,9 @@ a|* *Usability*
 ** *Grove* now includes editable *Sandbox* notebooks for workflow demos or learning. 
 
 |xref:./gxr-2-17-0-release-notes.adoc[2.17.0] |9/6/2024 
-a|* Usability*
-** New UI for data Views*
-***_Views_* tab in the *_Project_* panel, with list or thumbnail previews of saved views to select, create, load, and update views.
+a|* *Usability*
+** New UI for data *Views*
+*** *_Views_* tab in the *_Project_* panel, with list or thumbnail previews of saved views to select, create, load, and update views.
 *** *_Views_* menu near the legend. Load, save, and delete views without opening the *_Views_* tab.  
 ** *Easy Node*. Add a node by drag and drop from the *_Project > Category_* tab.
 ** *Easy edge*. Create new edges by *Ctrl-click + drag* to open the *_Add Edges_* dialog.
