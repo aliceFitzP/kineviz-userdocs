@@ -8,22 +8,22 @@ NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_
 
 == New Features 3.3.0
 
-* *Usability Enhancements*
-** Improved visibility for selected items in the left menu by reducing blurriness, adding a highlight circle, and introducing shadow effects.(GXR-3050)  
-** Added a paintbrush icon in the legend to open the style setting dialog (for Categories only - for other items in legend lists you still click a dot or line to open the dialog).(GXR-3174). 
-** Refined design of the Cypher/GQL toggle for Spanner Graph query (GXR-3160).
+=== Usability Enhancements 
+* Improved visibility for selected items in the left menu by reducing blurriness, adding a highlight circle, and introducing shadow effects.(GXR-3050)  
+* Added a paintbrush icon in the legend to open the style setting dialog (for Categories only - for other items in legend lists you still click a dot or line to open the dialog).(GXR-3174). 
+* Refined design of the Cypher/GQL toggle for Spanner Graph query (GXR-3160).
  
-* *Performance Enhancements* 
+=== Performance Enhancements 
  
-* *Improved Security and User Access*  
-** Additional Multi-Factor Authentication(MFA), using either the site domain or configured app name as issuer. (GXR-3124)
+=== Administration, Security, Configuration, and Deployment Enhancements
 
-* *Configuration Enhancements* 
-** Google Cloud Integration
-*** Added support for the GraphXR Database Proxy, enabling external database connectivity and improved data flow. (GXR-3176) 
+* Additional Multi-Factor Authentication(MFA), using either the site domain or configured app name as issuer. (GXR-3124)
 
-* *GraphXR API* 
-** Sphere Layout added for advanced visualization control(GXR-3167).  
+* Google Cloud Integration
+** Added support for the GraphXR Database Proxy, enabling external database connectivity and improved data flow. (GXR-3176) 
+
+=== GraphXR API 
+* Sphere Layout added for advanced visualization control(GXR-3167).  
  
 
 == Bug Fixes 
@@ -35,9 +35,14 @@ NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_
 * None
 
 == Extensions 3.3.0
-* *Graph Composer*
-* *Grove* Observable-based javascript notebooks
+=== Graph Composer
 
+_Property graph data modeling in GraphXR_ 
+ 
+=== Grove
+ 
+_Observable-based javascript notebooks_
+ 
 NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
  
 == Supported Environments 3.3.0

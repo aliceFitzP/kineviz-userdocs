@@ -6,6 +6,8 @@ The GraphXR 2.17.0 release includes new features, usability enhancements and sig
 
 == New Features 2.17.0
 
+=== Usability Enhancements 
+
 * *New UI for data Views*
 ** *_Views_* tab. In the Project panel, saved data views appear in the new *_Views_* tab.
 +
@@ -52,38 +54,51 @@ image::/v2_17/V2_17_07_EasyEdge.png[,340,520,role=text-left]
 * *Sphere* Layout is added to the *_Geometric_* layouts, and available in *_Quick Layout_* and right-click *_Layout_* menus.
 * *Collection edges*. When collections are created, edges are also added from collected nodes to any collection nodes that their neighbor nodes belong to. These edges are not saved to an external database such as Neo4j.
 
-* *Usability Enhancements*
+* A Project opens as soon as it is created.
 
-** A Project opens as soon as it is created.
-** *_Expand_* defaults to expand all relationships.
-** Visibility and readability of search terms, toolbar icons, and tooltips have been improved.
-** Toolbar icons are rearranged into two or more rows when you reduce the width of the browser window, keeping them more accessible. 
-** Deep linking occurs such that:
-*** The last panel opened will be open after refreshing the page.
-*** You can open a view with a Grove book opened or hidden in the background.
-** A menu item for registered admin users opens the Admin panel from the *_Projects_* page.
-** Templates can be imported and exported from the Admin panel. A priority (0, 1, or 2) can be set that controls the order templates appear in the Project page menu.
-** The right-click menu and its items are added to *_UI Configuration_*. An API has been created for additional menu customization.
+* *_Expand_* defaults to expand all relationships.
 
-* *Performance Enhancements* 
+* Visibility and readability of search terms, toolbar icons, and tooltips have been improved.
 
-** Faster response of *_Fly Out_* and *_Center To_* in large graphs.
-** Faster response for *_Ring_* and *_Tree_* ego layouts (30 sec. for 30k nodes).
+* Toolbar icons are rearranged into two or more rows when you reduce the width of the browser window, keeping them more accessible. 
+
+=== Performance Enhancements 
+
+* Faster response of *_Fly Out_* and *_Center To_* in large graphs.
+* Faster response for *_Ring_* and *_Tree_* ego layouts (30 sec. for 30k nodes).
+* Deep linking occurs such that:
+** The last panel opened will be open after refreshing the page.
+** You can open a view with a Grove book opened or hidden in the background.
+* https://min.io/[MinIO/S3] support added to GraphXR through Docker builds. MinIO is an open source object storage system designed for large-scale AI and ML workloads.
  
-* *Improved Security and User Access* 
-** *LDAP (Lightweight Directory Access Protocol) support*. GraphXR can now be configured to work with your LDAP infrastructure, allowing both normal and admin GraphXR users to login using their LDAP credentials. LDAP is an open, vendor-neutral application protocol for accessing and maintaining static data within directories (e.g. usernames, passwords, email addresses, printer connections, and more). LDAP can also handle authentication, so users can sign on just once and access many different files on the server.
-** Option to disable user / password login, for organizations requiring SSO.
-** Option to encrypt views on disk. 
+=== Administration, Security, Configuration, and Deployment Enhancements
 
-* *Project Configuration*
+* *LDAP (Lightweight Directory Access Protocol) support*. GraphXR can now be configured to work with your LDAP infrastructure, allowing both normal and admin GraphXR users to login using their LDAP credentials. LDAP is an open, vendor-neutral application protocol for accessing and maintaining static data within directories (e.g. usernames, passwords, email addresses, printer connections, and more). LDAP can also handle authentication, so users can sign on just once and access many different files on the server.
+* A menu item for registered admin users opens the Admin panel from the *_Projects_* page.
+* Templates can be imported and exported from the Admin panel. A priority (0, 1, or 2) can be set that controls the order templates appear in the Project page menu.
+* The right-click menu and its items are added to *_UI Configuration_*. An API has been created for additional menu customization.
+* Option to disable user / password login, for organizations requiring SSO.
+* Option to encrypt views on disk. 
+    
+=== GraphXR API 
 
-** https://min.io/[MinIO/S3] support added to GraphXR through Docker builds. MinIO is an open source object storage system designed for large-scale AI and ML workloads.
+* None
 
 == Removed 2.17.0
 
 * None
 
 == Extensions 2.17.0
+
+=== Grove
+ 
+_Observable-based javascript notebooks_
+
+=== Visual Query Builder
+ 
+_Drag and Drop Cypher Queries_.
+
+=== Other Extensions
 
 For Enterprise subscriptions, additional analytic capability can be provided, including:
 

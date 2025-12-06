@@ -8,7 +8,8 @@ NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_
 
 == New Features 3.4.0
 
-* *Usability Enhancements*
+=== Usability Enhancements 
+
 ** Enhanced environment-based UI hiding to streamline the user experience and declutter interface elements (GXR-3159).
 ** Enhanced styling for the left navigation menu, including rounded borders and refined highlight colors (GXR-3050).
 ** Updated legend and toolbars with larger icons and hover effects (GXR-3209).
@@ -21,23 +22,25 @@ NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_
 ** Addressed minor UI inconsistencies with tooltips, modals, and scroll handling (GXR-3238).
 ** Fixed layout and styling, including positioning of spring layout, scrolling of project lists, and modal sizing (GXR-3223, GXR-3238, GXR-3217).
 
-* *Performance Enhancements* 
+=== Performance Enhancements 
+
 ** Improved KuzuDB query validation using the database schema before conversion to graph format, ensuring more accurate query results (GXR-3222, GXR-3239).
 ** Corrected Kuzu query quoting issues, and enhanced compatibility across schema versions (GXR-3218, GXR-3240).
 
-* *Improved Security and User Access*  
-** Additional Multi-Factor Authentication(MFA) implementation. (GXR-3124)
-** Implemented enforced password reset, requiring users to change credentials upon first login or after resets (GXR-2911).
-** Resolved access issues with the /forgotPassword route (GXR-3242).
-** Upgraded the Nodemailer package for secure email communication (GXR-3241).
+=== Administration, Security, Configuration, and Deployment Enhancements
+ 
+* Additional Multi-Factor Authentication(MFA) implementation. (GXR-3124)
+* Implemented enforced password reset, requiring users to change credentials upon first login or after resets (GXR-2911).
+* Resolved access issues with the /forgotPassword route (GXR-3242).
+* Upgraded the Nodemailer package for secure email communication (GXR-3241).
 
-* *Configuration Enhancements* 
-** Google Cloud Integration
-*** Added support for configuring Google OAuth behavior via environment variables, including disabling OAuth when necessary (GXR-3178).
-*** Updated related documentation and environment configuration examples (GXR-3178). 
+* Google Cloud Integration
+** Added support for configuring Google OAuth behavior via environment variables, including disabling OAuth when necessary (GXR-3178).
+** Updated related documentation and environment configuration examples (GXR-3178). 
 
-* *GraphXR API* 
-** isCanvasLoaded() API method (GXR-3247).
+=== GraphXR API 
+
+* isCanvasLoaded() API method (GXR-3247).
  
 == Bug Fixes
 * Adjusted default force layout gravity values in 2D mode (GXR-3182).
@@ -51,10 +54,17 @@ NOTE: In a GraphXR project, click the Kineviz logo at the bottom left, choose *_
 * None
 
 == Extensions 3.4.0
-* *Graph Composer*
-* *Grove* Observable-based javascript notebooks
-** Improved sandbox project creation and checkbox synchronization for Grove workflows (GXR-3172).
-** Added configuration-based feature toggling for GXR3 tags and UI components (GXR-3219).
+
+=== Graph Composer
+
+_Property graph data modeling in GraphXR_ 
+ 
+=== Grove
+ 
+_Observable-based javascript notebooks_
+ 
+* Improved sandbox project creation and checkbox synchronization for Grove workflows (GXR-3172).
+* Added configuration-based feature toggling for GXR3 tags and UI components (GXR-3219).
 
 NOTE: For information about additional extensions, please contact https://www.kineviz.com[Kineviz].
  

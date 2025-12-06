@@ -42,7 +42,7 @@ MATCH (a:Person)-[b:ACTED_IN]-(e:Movie) MATCH (a:Person)-[d:DIRECTED]-(e:Movie) 
 
 To build this query in Visual Query Builder, you use _Person_ and _Movie_ *_Category_* blocks and connect them through sockets to an _ACTED_IN_ *_Relationship_* block. You then specify the _name_ property by connecting a *_Property_* block to the _Person_  *_Category_* block through property sockets, as shown below:
 
-image::/v2_17/10_01_03_VQBMovieCypherProps720.png[]
+ image::/v2_17/10_01_03_VQBMovieCypherProps720.png[]
 
 Once you've built a query, you can copy it to the clipboard, and paste it into GraphXR's *_Query_* panel and *_Cypher_* tab. This enables you to save, edit, and even extend your query by using additional Cypher functions not available in Visual Query Builder.
 
@@ -61,7 +61,7 @@ You can query for patterns in just one category of nodes, or one that links any 
 * Use *_In Memory Search_* to find and highlight subgraphs in the returned data.
 * Export and import visual queries as JSON files.
 
-image::/v2_17/10_01_04_VQBInterface1320.png[]
+ image::/v2_17/10_01_04_VQBInterface1320.png[]
 
 NOTE: We'll build visual queries on the Neo4j _Movies_ database available through the GraphXR demo project _VQB Movies_. It includes _Person_, _Movie_, and _Distributor_ categories, linked by relationships including _ACTED_IN_, _DIRECTED_, and  _REVIEWED_. To explore the project, log in, go to the *_Project>Data_* tab, and load a saved data view.
 
@@ -86,7 +86,7 @@ NOTE: You can add the *_Cypher Query_* block at any time.
 +
 Four matching _Person_ nodes are returned to the project space.
 +
-image::/v2_17/10_01_05_VQBPersonOnly1320.png[]
+ image::/v2_17/10_01_05_VQBPersonOnly1320.png[]
 
 === Build a query on a multiple Categories, Relationships, and properties
 
@@ -117,7 +117,7 @@ NOTE: If you are starting from the previous simple query, just add one more cate
 
 . Click the run icon on the Cypher query block.
 +
-image::/v2_17/10_01_06_VQBPersonMovie1320.png[]
+ image::/v2_17/10_01_06_VQBPersonMovie1320.png[]
 
 If the query does not load, or returns unexpected results, see <<troubleshooting-visual-queries,Troubleshooting>>.
 
@@ -125,7 +125,7 @@ If the query does not load, or returns unexpected results, see <<troubleshooting
 
 You can save and share a visual query by exporting (or importing) it as a .JSON file. When you re-enter a project after exiting, you can then re-load the visual query into Visual Query Builder. This also lets you share a visual query with another user.
 
-image::/v2_17/10_01_17_SaveExport960.png[,420,380,role=text-left]
+ image::/v2_17/10_01_17_SaveExport960.png[]
 
 *_To save a visual query_*:
 
@@ -144,7 +144,7 @@ NOTE: You can click the document icon at the lower right of the *_Cypher Query_*
 
 Once you've built and run a visual query you can continue to add and connect more building blocks, or remove blocks by dragging them to the *_Trash_* can icon at the lower right. The query in the *_Cypher Query_* block is immediately updated.
 
-image::/v2_17/10_01_07_VQBClearQuery960R.png[,420,380,role=text-left]
+ image::/v2_17/10_01_07_VQBClearQuery960R.png[]
 
 To delete an entire query and start over with an empty workspace, click the *_Clear_* icon located to the right of the *_Export_* icon at the top of the building blocks panel.
 
@@ -152,11 +152,11 @@ To delete an entire query and start over with an empty workspace, click the *_Cl
 
 Once graph data have been returned to GraphXR, you can also find and select subgraphs. Simply build (or import) a visual query and use *_In Memory Search_*, instead of the *_Cypher Query_* block.  Subgraphs can be single nodes, as in this query for any Twitter user with a _screen_name_ like "`Jeff`"...
 
-image::/v2_17/10_01_08_InMemoryJeffs720R.png[]
+ image::/v2_17/10_01_08_InMemoryJeffs720R.png[]
 
 ... or connected nodes, as in this query for influential users connected through a specific RETWEETED relationship:
 
-image::/v2_17/10_01_09_InMemorySelectAll720R.png[]
+ image::/v2_17/10_01_09_InMemorySelectAll720R.png[]
 
 NOTE: The nodes returned to the search list are labeled with the caption you set in the GraphXR *_Project>Category_* panel. This may be (but isn't necessarily) the property name you used in the query pattern. You can change the caption at any time.
  
@@ -170,7 +170,7 @@ A list of matching nodes is displayed.
 
 . Click an item on the list to select the node or pattern in the graph space. Or, click *_Select All_* to select all the patterns on the list.
 +
-image::/v2_17/10_01_10_InMemoryCounties720R.png[]
+ image::/v2_17/10_01_10_InMemoryCounties720R.png[]
 +
 With the data selected, other GraphXR functions can be used. For example, you can *_Tag_* a selection, or use *_Inverse_* to select and then temporarily *_Hide_* or *_Delete_* all the other data.
 
@@ -189,13 +189,27 @@ This query is for influential Twitter users who are probably bots and who have r
 * In the Neo4j graph data connection is through relationships of the form _RETWEETED_YYYY_MM_.
 * Influential bot users are those with a _followers_count_ property value greater than 20,000 and a _boto_prob_ (i.e. calculated probability) of 0.90 or greater.
 +
-image::/v2_17/10_01_11_TwitterChain960R.png[]
+ image::/v2_17/10_01_11_TwitterChain960R.png[]
+
+=== Query for a branched pattern - Users who send Video Tweets
+
+This query builds on our query for influential bot-like users, but specifies only those who have sent videos along with their tweets. The pattern available in the graph database requires that we also query for _Tweet_ nodes and connected _Media_ nodes. This can be done by adding another MATCH statement to the query.
+
+ image::/v2_17/10_01_12_TwitterBranch960R.png[]
+
+=== Query for a looped pattern - Users retweeting in a loop.
+
+We can query for a fairly simple pattern in which a chain of _Users_ retweeting to one another within the same month loops back to the first _User_. In GraphXR we can set the _boto_prob_ property as the caption for _User_ nodes, to see if this kind of circular messaging appears to be especially bot-like.
+
+ image::/v2_17/10_01_13_TwitterLoop960R.png[]
+
+You can modify the query at any time by selecting properties from the *_Category_* blocks and adding *_Property_* selectors. This lets you quickly explore and then refine your queries to focus on specific data. For example, the above query could be modified to return only influential users, or users who have sent messages that include specific types of content.
 
 === Query for linkage between nodes
 
 Since graph data is often used to model complex connections (for example between people or ideas, time series, or spatial patterns), it can be interesting focus on chains of connected nodes. We can query for such a pattern by setting a *_length_* in the settings of a *_Relationship_* block.
 
-image::/v2_17/10_01_14_TwitterRelLengthSelector960R.png[,420,380,role=text-left]
+ image::/v2_17/10_01_14_TwitterRelLengthSelector960R.png[]
 
 The *_length_* setting provides a dropdown menu and text boxes for entering a number:
 
@@ -205,11 +219,11 @@ The *_length_* setting provides a dropdown menu and text boxes for entering a nu
 
 On the Twitter data, we could query for _Users_ who retweeted to one another during September 2020 (i.e., with the relationship _RETWEETED_2020_09)_ and are 3 to 5 hops to other _Users_ via that relationship.
 
-image::/v2_17/10_01_15_TwitterRelBetween960R.png[,420,380,role=text-left]
+ image::/v2_17/10_01_15_TwitterRelBetween960R.png[]
 
 The Cypher query now includes the length in the MATCH statement as a property of the relationship, as follows: MATCH (a:User)-[b:RETWEETED_2020_09*3..5]\->(c:User)
 
-image::/v2_17/10_01_16_TwitterRelQuery1080R.png[,720,380,role=text-left]
+ image::/v2_17/10_01_16_TwitterRelQuery1080R.png[]
 
 == Visual Query Builder Quick Reference
 

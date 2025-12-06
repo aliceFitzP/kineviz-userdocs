@@ -54,3 +54,8 @@
 *** xref:layouts/tree-layout.adoc[Tree Layout]
 ** xref:geospatial-maps.adoc[*Display Data on a World Map*]
 ** xref:graph-analytics.adoc[*Graph Analytic Algorithms*]
+** xref:graphxr-extensions/intro-extensions.adoc[*GraphXR Extensions*]
+*** xref:graphxr-extensions/grove.adoc[*Grove*]
+*** xref:graphxr-extensions/visual-query-builder.adoc[*Visual Query Builder*]
+*** xref:graphxr-extensions/sightxr.adoc[*SightXR*]
+*** xref:graphxr-extensions/seekerxr.adoc[*SeekerXR*]
